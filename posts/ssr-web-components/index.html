@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ssr Web Components : The next await that follows is @skatejs/ssr method for rendering web components server side. - Pozaros</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="What are web components, ecosystem, why they are useful polymer vs native web components how did we achieve ssr, including the role of puppeteer, serialize, hydrate, pug.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Pozaros" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Pozaros</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Ssr Web Components : The next await that follows is @skatejs/ssr method for rendering web components server side.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<p>Ssr Web Components / Setting up ssr (server side rendering) with react is painful.</p>	
+	
+		<section>
+    <aside> 
+        <a href="https://codesandbox.io/api/v1/sandboxes/j4ds4/screenshot.png"><img alt="Vue Server Renderer Examples Codesandbox Web components is a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your. vue server renderer examples codesandbox" src="https://codesandbox.io/api/v1/sandboxes/j4ds4/screenshot.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mhznQUwHJsGjRQ97zRoX1PJbqJ6qyhRxcw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 2400x1260 px</li> 
+    <mark>Vue Server Renderer Examples Codesandbox </mark> - I recently launched a site built entirely with web components.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://dev.to/social_previews/article/332802.png"><img alt="Fetching Api Data With Web Components And Ssr Dev Community I recently launched a site built entirely with web components. fetching api data with web components" src="https://dev.to/social_previews/article/332802.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnlIZTjFbQmIKaY6f5hQnmHsBbYa4wZXY-ug&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1128x600 px</li> 
+    <mark>Fetching Api Data With Web Components And Ssr Dev Community </mark> - Instead, you have to gather pieces of information…
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://image.slidesharecdn.com/sdperf-react-performance-web-160813060248/95/hastening-react-ssr-web-performance-san-diego-16-638.jpg?cb=1471068274"><img alt="Hastening React Ssr Web Performance San Diego It&#039;s not possible to run the same code on the server since web components rely on browser specific dom apis that are not. hastening react ssr web performance" src="https://image.slidesharecdn.com/sdperf-react-performance-web-160813060248/95/hastening-react-ssr-web-performance-san-diego-16-638.jpg?cb=1471068274" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gcmp5YZ9xCcGBsjr86qk-LEf7JL17q85Ig&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 638x359 px</li> 
+    <mark>Hastening React Ssr Web Performance San Diego </mark> - Part 6 of 6 in our vue.js performance series.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://image.slidesharecdn.com/kharkivjsflawsofthewebcomponentsin2019andhowtoaddressthem-191021102203/95/kharkivjs-flaws-of-the-web-components-in-2019-and-how-to-address-them-21-638.jpg?cb=1571653471"><img alt="Kharkivjs Flaws Of The Web Components In 2019 And How To Address Them I recently launched a site built entirely with web components. slideshare" src="https://image.slidesharecdn.com/kharkivjsflawsofthewebcomponentsin2019andhowtoaddressthem-191021102203/95/kharkivjs-flaws-of-the-web-components-in-2019-and-how-to-address-them-21-638.jpg?cb=1571653471" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWAKDnpXHxpdJ8P5-nq4Y2KidKPrMKHsICYA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 638x359 px</li> 
+    <mark>Kharkivjs Flaws Of The Web Components In 2019 And How To Address Them </mark> - With web components there are several limitations when it comes to ssr:
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://avatars.githubusercontent.com/u/26069445?s=400&amp;v=4"><img alt="Github Boltdesignsystem Web Components Ssr Poc Of Twig Based Web Components With Php Based Server Side Rendering And Webpack Building Off Of The Awesome Work From Samuel Mortenson S Twig Component S Project There is no good overview or starting point. web components ssr" src="https://avatars.githubusercontent.com/u/26069445?s=400&amp;v=4" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHhk0SiQJuD7wxSTXb4pO_IC2Lv_GTuwdrhA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 400x400 px</li> 
+    <mark>Github Boltdesignsystem Web Components Ssr Poc Of Twig Based Web Components With Php Based Server Side Rendering And Webpack Building Off Of The Awesome Work From Samuel Mortenson S Twig Component S Project </mark> - The next await that follows is @skatejs/ssr method for rendering web components server side.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://miro.medium.com/max/4800/1*xBtCrQopfZfM8mUhYkRZGw.jpeg"><img alt="Ssr With Web Components Rendering Shadow Dom And Templates In By Dorian Smiley Jan 2021 Javascript In Plain English Part 6 of 6 in our vue.js performance series. web components rendering shadow dom" src="https://miro.medium.com/max/4800/1*xBtCrQopfZfM8mUhYkRZGw.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLP8UnsHHTswSE1wLz77yy0lQoupcDC-AsZA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 4000x2666 px</li> 
+    <mark>Ssr With Web Components Rendering Shadow Dom And Templates In By Dorian Smiley Jan 2021 Javascript In Plain English </mark> - With web components there are several limitations when it comes to ssr:
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://angular.io/assets/images/logos/angular/angular.svg"><img alt="Angular Server Side Rendering Ssr With Angular Universal With web components there are several limitations when it comes to ssr: angular server side rendering ssr" src="https://angular.io/assets/images/logos/angular/angular.svg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROSVsyTE3Rq2DeKnZ9DvrUCTjEv6k0NTDNvw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 800x800 px</li> 
+    <mark>Angular Server Side Rendering Ssr With Angular Universal </mark> - Let&#039;s see how, starting with a common but what if you don&#039;t have an ssr solution to lean on or your entire app is based on web components?
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://developers.google.com/web/updates/images/2019/02/rendering-on-the-web/client-rendering-tti.png"><img alt="Rendering On The Web Google Developers Server side rendering of web components. rendering on the web google developers" src="https://developers.google.com/web/updates/images/2019/02/rendering-on-the-web/client-rendering-tti.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQck7oy5ilNHoDoaxxeGmgdjwN1aiH7A8dlOA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1562x628 px</li> 
+    <mark>Rendering On The Web Google Developers </mark> - I recently launched a site built entirely with web components.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://dzone.com/storage/temp/12844895-1576565677882.png"><img alt="Client Side V S Server Side Rendering What To Choose When Dzone Web Dev In this article, we&#039;ll talk a bit about transitioning to pwa and related issues. client side v s server side rendering" src="https://dzone.com/storage/temp/12844895-1576565677882.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_BcURWK0Zcw9fKL8C6EILM0zMrh5UTFdnw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1680x945 px</li> 
+    <mark>Client Side V S Server Side Rendering What To Choose When Dzone Web Dev </mark> - Progressive web apps are on rising tide of popularity.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://miro.medium.com/max/1200/1*aQ6WQZ40MFPVqCBuN6LM_w.jpeg"><img alt="Ssr With Next Js Styled Components And Material Ui By Manato Kuroda Javascript In Plain English The next await that follows is @skatejs/ssr method for rendering web components server side. ssr with next js styled components and" src="https://miro.medium.com/max/1200/1*aQ6WQZ40MFPVqCBuN6LM_w.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLr7qAWGIoqTNDSgbgc9rc-Z3YoDvaUfSviw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1200x489 px</li> 
+    <mark>Ssr With Next Js Styled Components And Material Ui By Manato Kuroda Javascript In Plain English </mark> - What are web components, ecosystem, why they are useful polymer vs native web components how did we achieve ssr, including the role of puppeteer, serialize, hydrate, pug.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://image.slidesharecdn.com/buildingframeworkagnosticuiwithwebcomponents6-191022075502/95/building-framework-agnostic-ui-with-web-components-29-638.jpg?cb=1571731024"><img alt="Building Framework Agnostic Ui With Web Components Ssr or csr for your progressive web app? building framework agnostic ui with web" src="https://image.slidesharecdn.com/buildingframeworkagnosticuiwithwebcomponents6-191022075502/95/building-framework-agnostic-ui-with-web-components-29-638.jpg?cb=1571731024" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT66NAL4qgrIfN_ktKdg0s5Ux1EBbWJVLMkHA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 638x359 px</li> 
+    <mark>Building Framework Agnostic Ui With Web Components </mark> - It combines source routing with routing along a virtual ring, and is based on the idea of pushing chord into the underlay.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cdn.quasar.dev/logo/svg/quasar-logo.svg"><img alt="What Is Ssr Quasar Framework With web components there are several limitations when it comes to ssr: what is ssr quasar framework" src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7RxiwAHDg6kdZA9rgXGxKhPaFjP9yh3Oew&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 800x800 px</li> 
+    <mark>What Is Ssr Quasar Framework </mark> - Instead, you have to gather pieces of information…
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://miro.medium.com/max/1288/1*66WSqRvhpQPguIri1QXl1Q.png"><img alt="Server Side Rendering Web Components By Aram Koukia Koukia There is no good overview or starting point. server side rendering web components" src="https://miro.medium.com/max/1288/1*66WSqRvhpQPguIri1QXl1Q.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9HXuvFhe0wIQ3AULAeNaaBC8oopgFJBv5w&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 644x355 px</li> 
+    <mark>Server Side Rendering Web Components By Aram Koukia Koukia </mark> - With web components there are several limitations when it comes to ssr:
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cdn-images-1.medium.com/fit/t/1600/480/1*q5vs3KU_zk0E7x5Ju4FXNg.jpeg"><img alt="Web Components Landscape In 2019 It S A Comprehensive Starting Point For By Vlad Fedosov Namecheap Engineering Medium It combines source routing with routing along a virtual ring, and is based on the idea of pushing chord into the underlay. web components landscape in 2019 it s" src="https://cdn-images-1.medium.com/fit/t/1600/480/1*q5vs3KU_zk0E7x5Ju4FXNg.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM63a7wNmumeXtecj_bNLCyov-grahrOq7eA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1600x480 px</li> 
+    <mark>Web Components Landscape In 2019 It S A Comprehensive Starting Point For By Vlad Fedosov Namecheap Engineering Medium </mark> - Let&#039;s see how, starting with a common but what if you don&#039;t have an ssr solution to lean on or your entire app is based on web components?
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.simform.com/wp-content/uploads/2020/02/Why-use-react-1.2.png"><img alt="Why And Where Should You Use React For Web Development Simform Skatejs attempted to render web components server side, but i cannot get the example working. use react for web development" src="https://www.simform.com/wp-content/uploads/2020/02/Why-use-react-1.2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTygPUfnwkzqatTuQf5Lu3N18ZtsKQPKbN9lA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1734x900 px</li> 
+    <mark>Why And Where Should You Use React For Web Development Simform </mark> - It combines source routing with routing along a virtual ring, and is based on the idea of pushing chord into the underlay.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://image.slidesharecdn.com/sdperf-react-performance-web-160813060248/95/hastening-react-ssr-web-performance-san-diego-4-638.jpg?cb=1471068274"><img alt="Hastening React Ssr Web Performance San Diego Setting up ssr (server side rendering) with react is painful. hastening react ssr web performance" src="https://image.slidesharecdn.com/sdperf-react-performance-web-160813060248/95/hastening-react-ssr-web-performance-san-diego-4-638.jpg?cb=1471068274" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVLA9Gwj_8Ctr4sq9r2pjNRvbfAJRtlrqUOQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 638x359 px</li> 
+    <mark>Hastening React Ssr Web Performance San Diego </mark> - Scalable source routing (ssr) is a routing protocol for unstructured networks such as mobile ad hoc networks, mesh networks, or sensor networks.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://miro.medium.com/max/4240/1*wPxjvJimn9FpOfVKJW5QAg.png"><img alt="A Deep Analysis Into Isomorphic Autonomous Cross Framework Usage Microfrontends By David Lorenz Itnext Progressive web apps are on rising tide of popularity. a deep analysis into isomorphic" src="https://miro.medium.com/max/4240/1*wPxjvJimn9FpOfVKJW5QAg.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJTD4KzGUzqnvXyK3VOdEfzD7w3hKgBydbcw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 2120x780 px</li> 
+    <mark>A Deep Analysis Into Isomorphic Autonomous Cross Framework Usage Microfrontends By David Lorenz Itnext </mark> - Ssr or csr for your progressive web app?
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/yT-EsESAmgA/maxresdefault.jpg"><img alt="Ssr Web Components Polymer Summit 2017 Youtube What are web components, ecosystem, why they are useful polymer vs native web components how did we achieve ssr, including the role of puppeteer, serialize, hydrate, pug. ssr web components polymer summit 2017" src="https://i.ytimg.com/vi/yT-EsESAmgA/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXg8G0-WtifkbTBDhUU_BI80MTuGHxknMgLg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Ssr Web Components Polymer Summit 2017 Youtube </mark> - Let&#039;s see how, starting with a common but what if you don&#039;t have an ssr solution to lean on or your entire app is based on web components?
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7b9b31fd-889e-4a12-b785-b274642ef886/04-client-side-rendering-opt.png"><img alt="React Server Side Rendering With Node And Express Smashing Magazine In this article, we&#039;ll talk a bit about transitioning to pwa and related issues. react server side rendering with node" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7b9b31fd-889e-4a12-b785-b274642ef886/04-client-side-rendering-opt.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5N_CDDI4-5tTl-yVu_D-wh_yoXP1GHjB-yQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1098x461 px</li> 
+    <mark>React Server Side Rendering With Node And Express Smashing Magazine </mark> - Progressive web apps are on rising tide of popularity.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--huGcv0WO--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/qgc03cib7p603aph0o76.png"><img alt="Lets Build Web Components Part 8 Mythbusters Edition Dev Community There is no good overview or starting point. lets build web components part 8" src="https://res.cloudinary.com/practicaldev/image/fetch/s--huGcv0WO--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/qgc03cib7p603aph0o76.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9_T3Eu5-PK_W6zTlYVqWL9ndzJzxChH5lzg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1000x500 px</li> 
+    <mark>Lets Build Web Components Part 8 Mythbusters Edition Dev Community </mark> - Driven by the heavy use of javascript in the current web, google has claimed its search robot.
+</figcaption>  
+    </aside>
+</section>
+		
+<h3>Random Posts</h3>
+		
+<li><a href="/posts/rhedeg-i-paris-lyrics" target="_blank">Rhedeg I Paris Lyrics</a></li>
+		
+<li><a href="/posts/dvdplay-in-malayalam-movies" target="_blank">Dvdplay In Malayalam Movies</a></li>
+		
+<li><a href="/posts/stree-movie-last-scene" target="_blank">Stree Movie Last Scene</a></li>
+		
+<li><a href="/posts/melliname-song-lyrics-meaning-in-english" target="_blank">Melliname Song Lyrics Meaning In English</a></li>
+		
+<li><a href="/posts/paayal-radhakrishna-web-series" target="_blank">Paayal Radhakrishna Web Series</a></li>
+		
+<li><a href="/posts/watch-qismat-punjabi-movie-online-with-english-subtitles" target="_blank">Watch Qismat Punjabi Movie Online With English Subtitles</a></li>
+		
+<li><a href="/posts/oke-okkadu-meme-templates" target="_blank">Oke Okkadu Meme Templates</a></li>
+		
+<li><a href="/posts/kartik-aryaan-height-cm" target="_blank">Kartik Aryaan Height Cm</a></li>
+		
+<li><a href="/posts/shahid-kapoor-real-height-in-feet-without-shoes" target="_blank">Shahid Kapoor Real Height In Feet Without Shoes</a></li>
+		
+<li><a href="/posts/actor-madhavan-hairstyle" target="_blank">Actor Madhavan Hairstyle</a></li>
+		
+<li><a href="/posts/tik-tok-hasdi-aa-new-song" target="_blank">Tik Tok Hasdi Aa New Song</a></li>
+		
+<li><a href="/posts/tamil-album-songs-download-masstamilan-2019" target="_blank">Tamil Album Songs Download Masstamilan 2019</a></li>
+		
+<li><a href="/posts/nene-modalu-neene-kone-song-download" target="_blank">Nene Modalu Neene Kone Song Download</a></li>
+		
+<li><a href="/posts/mobijatt-com-movies" target="_blank">Mobijatt Com Movies</a></li>
+		
+<li><a href="/posts/ringtone-download-tamil-songs-2019-masstamilan" target="_blank">Ringtone Download Tamil Songs 2019 Masstamilan</a></li>
+	
+<h3>Popular Posts</h3>
+		
+<li><a href="/posts/shajahan-tamil-movie-hd-images" target="_blank">Shajahan Tamil Movie Hd Images</a></li>
+		
+<li><a href="/posts/old-hindi-songs-1950-to-1970-download" target="_blank">Old Hindi Songs 1950 To 1970 Download</a></li>
+		
+<li><a href="/posts/jab-we-met-meaning-in-punjabi" target="_blank">Jab We Met Meaning In Punjabi</a></li>
+		
+<li><a href="/posts/sai-pallavi-movies-list-in-malayalam" target="_blank">Sai Pallavi Movies List In Malayalam</a></li>
+		
+<li><a href="/posts/poppy-lee-friar-height" target="_blank">Poppy Lee Friar Height</a></li>
+		
+<li><a href="/posts/bank-chor-vivek-oberoi-full-movie" target="_blank">Bank Chor Vivek Oberoi Full Movie</a></li>
+		
+<li><a href="/posts/hebbuli-tamilyogi" target="_blank">Hebbuli Tamilyogi</a></li>
+		
+<li><a href="/posts/taj-mahal-an-eternal-love-story-full-movie-download-720p" target="_blank">Taj Mahal: An Eternal Love Story Full Movie Download 720P</a></li>
+		
+<li><a href="/posts/filtercopy-actors-list-with-photo" target="_blank">Filtercopy Actors List With Photo</a></li>
+		
+<li><a href="/posts/rangasthalam-full-movie-in-tamil-dubbed-download-kuttymovies" target="_blank">Rangasthalam Full Movie In Tamil Dubbed Download Kuttymovies</a></li>
+		
+<li><a href="/posts/side-effects-of-betamethasone-dipropionate" target="_blank">Side Effects Of Betamethasone Dipropionate</a></li>
+		
+<li><a href="/posts/movie4me-cc-2021" target="_blank">Movie4Me.cc 2021</a></li>
+		
+<li><a href="/posts/side-effects-of-betamethasone-pregnancy" target="_blank">Side Effects Of Betamethasone Pregnancy</a></li>
+		
+<li><a href="/posts/hotel-kumkum-mumbai" target="_blank">Hotel Kumkum Mumbai</a></li>
+		
+<li><a href="/posts/qismat-movie-watch-online" target="_blank">Qismat Movie Watch Online</a></li>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://pozaros.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/3movierulz-tv-category-movierulz-today-page-28/">3Movierulz Tv Category Movierulz Today Page 28 : Even after setting up strict rules government has failed to stop leak of movies on websites like.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/bala-bala-song-download-pagalworld-mp3-housefull-4/">Bala Bala Song Download Pagalworld Mp3 Housefull 4 : Akshay kumar housefull 4 movie mp3 song download, housefull 4 songs download 2019, housefull 4 hindi movie mp3 download.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/filmymeet-com-punjabi/">Filmymeet.com Punjabi / Khatre da ghuggu (2020) punjabi hd.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/gaddalakonda-ganesh-naa-songs-mp3/">Gaddalakonda Ganesh Naa Songs Mp3 : Now we recommend you to download first result gaddalakonda ganesh valmiki jarra jarra video varun tej atharvaa mickey j meyer mp3.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/hakuna-matata-resort-udupi/">Hakuna Matata Resort Udupi / Copyright © 2021 hakuna matata maui hostel 🤙🏼powered by aloha!</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/i-movie-naa-songs-download-in-hindi/">I Movie Naa Songs Download In Hindi / Panjaa vaisshnav tej, krithi shetty, vijay sethupathi music:</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/justin-whang-mr-robot/">Justin Whang Mr Robot - The fourth and final season takes place during christmas and sees elliot and mr robot reconcile.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/kadal-gautham-karthik-hd/">Kadal Gautham Karthik Hd / Gautham karthik was born to tamil film actor karthik muthuraman and his first wife, actress ragini karthik.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/kuttymovies-net-2021/">Kuttymovies Net 2021 / What is kutty movies.net and kutty movies.com?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/kuttyweb-2021-tamil-movies-download/">Kuttyweb 2021 Tamil Movies Download / The resumption अमेजन प्राइम (amazon prime video ) पर स्ट्रीम की जा रही है।</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Pozaros.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
